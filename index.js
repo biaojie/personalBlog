@@ -7,7 +7,7 @@ var app = new express();
 app.use(express.static('./page/'));
 
 
-app.get('/queryEveryDay', loader.get('/queryEveryDay'));
+app.get('/queryEveryDay', loader.get('https://biaojie.github.io/queryEveryDay'));
 app.get('/queryBlogByPage', loader.get('/queryBlogByPage'));
 app.get('/queryBlogCount', loader.get('/queryBlogCount'));
 app.get('/queryBlogById', loader.get('/queryBlogById'));
